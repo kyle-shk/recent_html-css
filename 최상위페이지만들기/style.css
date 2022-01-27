@@ -6,6 +6,9 @@
     --accent-color:#BF6A7A;
     --dark-color:#2B5566;
     --text-bright-color:#fff;
+    --icon-color:#fff;
+    --icon-bk-color:#ddd;
+    --large-width:1000px;
 }
 
 /* 기본설저이 페이지 전체 */
@@ -83,4 +86,71 @@ body {
     .conA p {
         font-size: 24px;
     }
+}
+
+/* 컨텐츠B: 개요(아이콘+글자) */
+.conB .text{
+    text-align: center;
+}
+
+.conB h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.conB p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+.conB a{
+    /* color: #5D9AB2; */
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.conB a:hover{
+    text-decoration: underline;
+}
+.conB .icon{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 40px;
+    /* font-size의 상대적인 배수값 -> Em */
+    /* em 의 개념은 기준이 되는 값을 지정된 배수로 변환해 표현한 크기를 의미합니다. 여기서 기준이 되는 값이란 현재 스타일 지정 요소의 font-size 값을 의미합니다. */
+    /* http://triki.net/prgm/3250 */
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color:var(--icon-bk-color);
+    color: var(--icon-color);
+}
+
+@media (min-width: 768px) {
+    .conB .container{
+        display:flex;
+        max-width: var(--large-width);
+        /* 좌우 정렬 */
+        margin: 0px auto;
+    }
+    .conB .text{
+        /* 부모요소기준으로 몇대몇의 비율로 정렬하지정하는것 */
+        flex:1
+    }
+}
+
+.conB .container{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.conB .text{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
 }
