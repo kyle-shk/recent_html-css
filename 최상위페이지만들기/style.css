@@ -9,12 +9,30 @@
     --icon-color:#fff;
     --icon-bk-color:#ddd;
     --large-width:1000px;
+    --gray-color:#ddd;
+    --middle-width:800px;
 }
-
+/* 기본설정: 폰트크기 */
+@media (max-width: 599px) {
+    :root{
+        font-size: 14px;
+    }
+}
+@media (min-width: 600px) and (max-width:799px) {
+    :root{
+        font-size: 16px;
+    }
+}
+@media (min-width: 800px) {
+    :root{
+        font-size: 18px;
+    }
+}
 /* 기본설저이 페이지 전체 */
 body {
     font-family: 'Nanum Brush Script', cursive;
     margin: 0;
+    font-size: 16px;
 }
 
 /* 컨텐츠A: 히어로 이미지 */
@@ -413,6 +431,10 @@ header{
     width: 100%;
     background-color: rgba(255,255,255,0.9);
 }
+.nohero header{
+    position: static;
+    border-bottom: solid 1px var(--gray-color);
+}
 /* 해더A:사이트이름 */
 .headA{
     display:inline-block;
@@ -484,4 +506,153 @@ header{
     .headB{
         display:none;
     }
+}
+/* 콘텐츠 페이지:기사 */
+.post .container{
+    max-width: var(--middle-width);
+    margin: 0 auto;
+    padding: 30px 10px;
+    
+}
+
+.post h1{
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    border-left: solid 0.75rem var(--accent-color);
+}
+.post p{
+    font-size: 1rem;
+    line-height: 2;
+}
+.post img{
+    max-width:100%;
+}
+/* 컨텐츠페이지: 빵 부스러기 리스트 */
+.bread ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+}
+
+.bread a {
+    display:block;
+    padding: 5px;
+    color: inherit;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.bread a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.bread a::after{
+    margin-left: 10px;
+    content:'\f054';
+    opacity: 0.3;
+    font-family: 'FontAwesome';
+}
+
+/* 소개페이지:이미지와 연혁 */
+.history{
+    background-color: var(--main-color);
+    color: var(--text-bright-color);
+}
+.history .text{
+    padding:20px;
+}
+
+.history h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.history .photo{
+    min-height: 300px;
+    background-image: url(img/화분.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.history table{
+    /* border-collapse: collapse; */
+    border-top: solid 1px var(--gray-color);
+    font-size: 0.875rem;
+}
+.history th,.history td{
+    border-bottom: solid 1px var(--gray-color);
+    padding: 0 1.8rem;
+}
+.history th{
+    padding-right: 1rem;
+    text-align: left;
+    word-break: keep-all;
+}
+@media (min-width: 768px) {
+    .history .container {
+        display:flex;
+        max-width: var(--large-width);
+        margin: 0 auto;
+    }
+    .history .photo{
+        flex: 3;
+    }
+    .history .text{
+        flex: 2;
+        padding:50px;
+    }
+}
+
+/* 문의페이지: 문의대상 */
+.contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--gray-color);
+    text-align: center;
+}
+.contact h2{
+    margin-top: 0;
+}
+@media (min-width: 768px) {
+    .contact-wrap {
+        display:flex;
+    }
+    .contact {
+        flex:1
+    }
+    .contact:first-child{
+        margin-right: 20px;
+    }
+}
+.contact span{
+    display:inline-block;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--icon-bk-color);
+}
+
+.contact a{
+    font-size:1.4rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 문의페이지:지도 */
+.location iframe{
+    width: 100%;
+    height:400px;
+    vertical-align: bottom;
+}
+.location h2{
+    margin: 0;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--text-bright-color);
+    font-size: 1.5rem;
+    text-align: center;
 }
