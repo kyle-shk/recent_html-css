@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600&family=Readex+Pro&family=Redacted+Script&family=Sora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9812235979.js" crossorigin="anonymous"></script>
+    <style>
+        .sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0px;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+        $(function(){
+            $('.headC').click(function(){
+                $('.headB').slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class='headA'>
+                    LOGGER
+                </a>
+                <button type="button" class="headC">
+                    <span class='fa fa-bars' title="MENU"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="contents.html">콘텐츠</a></li>
+                    <li><a href="about.html">소개</a></li>
+                    <li><a href="contact.html">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class='conA compact'>
+        <div class="container">    
+            <h1>LOGGER</h1>
+            <p>맛있고 즐거운 라이프로그</p>
+        </div>
+    </section>
+
+    <section class="listA">
+        <h1 class="sr-only">RECENT POSTS</h1>
+        <div class="container">
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃1.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃2.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...
+                            ㅁㄴㅇㅁㄴㄷㅁㄴㄷㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㅁㄴㄴㅁ
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃3.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...
+                            ㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴ
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃4.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃5.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃6.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...
+                            ㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁ너ㅏㅣ옴ㄴ아ㅣ;ㄴ머아ㅣㄴ머아ㅣㅁ너이나머이;ㅁ나
+                            ㄴ머ㅏ임너ㅣㅏㅁ너아ㅣㅁㄴ어나ㅣㅁ어ㅏㅣㅁㄴ
+                            ㅁ너ㅏ임너아ㅣㅁ너이ㅏㅁ너
+                            ㄴ마ㅣㅓㅇ니마엄니ㅏ엄ㄴ
+                            ㅁ너ㅏㅣ엄니ㅏ
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃7.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃1.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃2.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃3.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃4.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image:url(img/꽃5.jpeg)"></div>
+                    <div class="text">
+                        <h2>노란 꽃으로 꾸며보기</h2>
+                        <p>노란 꽃으로 방을 꾸미면 좋은 일이 있을지도 몰라요. 이유는...</p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <div class="footA">
+            <h2>LOGGER</h2>
+            <p>
+                주소:IT 전문서시 위키구 북스동<br>
+                <a href="#">
+                    http://logger.net
+                </a>
+            </p>
+
+            <nav class="footD">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-twitter"title='Twitter'></span>
+                            <!-- <span class="sr-only">Twitter</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-facebook"title='facebook'></span>
+                            <!-- <span class="sr-only">Twitter</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-google-plus"title='Google Plus'></span>
+                            <!-- <span class="sr-only">Twitter</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-instagram"title='instagram'></span>
+                            <!-- <span class="sr-only">Twitter</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-youtube"title='youtube'></span>
+                            <!-- <span class="sr-only">Twitter</span> -->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+
+        <nav class="footB">
+            <div>
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">설립</a></li>
+                    <li><a href="#">주소</a></li>
+                    <li><a href="#">지도</a></li>
+                    <li><a href="#">스태프</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>SUPPROT</h3>
+                <ul>
+                    <li><a href="#">다운로드</a></li>
+                    <li><a href="#">메뉴얼</a></li>
+                    <li><a href="#">자주 묻는 질문</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>CONTENT</h3>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">개발자</a></li>
+                    <li><a href="#">블로그</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="footC">
+            @ LOGGER corp. All rights reserved.
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
